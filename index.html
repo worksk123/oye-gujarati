@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gautam Kumar Jha | Stock Market Education on Telegram</title>
+<meta name="description" content="Free Telegram channel for stock market education: chart basics, risk management and trading discipline. Educational content only.">
+<meta name="theme-color" content="#0a2540">
+
+<!-- ============================================================
+     EDIT THESE SETTINGS (website owner only)
+     ============================================================ -->
+<script>
+const CONFIG = {
+  BRAND_NAME: "Gautam Kumar Jha",                   // <-- PAGE / BRAND NAME (not given, so taken from your logo name "GJ"; change if needed)
+  LOGO_IMAGE: "GJ.jpeg",                            // <-- REPLACE LOGO: keep your photo named GJ.jpeg in the same folder as this file
+  TELEGRAM_URL: "https://t.me/+PJ8ndmNlrcs2YjFl",   // <-- TELEGRAM LINK
+  META_PIXEL_ID: "1640914541036889"                 // <-- META PIXEL ID
+};
+</script>
+
+<!-- ============ META PIXEL BASE CODE (PageView only) ============ -->
+<script>
+if (CONFIG.META_PIXEL_ID && CONFIG.META_PIXEL_ID !== "YOUR_META_PIXEL_ID") {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.META_PIXEL_ID);
+  fbq('track', 'PageView');
+}
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1640914541036889&ev=PageView&noscript=1"></noscript>
+
+<style>
+:root{ --bg:#0a2540; --bg2:#0e3157; --card:rgba(255,255,255,.06); --line:rgba(120,200,255,.28); --cyan:#4fd8ff; --cyan2:#1db4e6; --white:#f2f9ff; --muted:#a9c6dc; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--white);line-height:1.65;overflow-x:hidden;
+  background-color:var(--bg);
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px),
+                   linear-gradient(rgba(120,200,255,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(120,200,255,.10) 1px,transparent 1px);
+  background-size:96px 96px,96px 96px,24px 24px,24px 24px;background-attachment:fixed;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 420px at 50% 0,rgba(79,216,255,.18),transparent 70%),linear-gradient(transparent 55%,var(--bg) 100%)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+main{max-width:600px;margin:0 auto;padding:26px 18px 38px}
+
+/* ---------- Spec-sheet header ---------- */
+.sheet{border:1.5px solid var(--cyan);border-radius:6px;background:rgba(10,37,64,.78);position:relative;padding:22px 18px 24px;text-align:center}
+.sheet::before,.sheet::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--cyan)}
+.sheet::before{top:-2px;left:-2px;border-right:0;border-bottom:0}
+.sheet::after{bottom:-2px;right:-2px;border-left:0;border-top:0}
+.tagline{font-size:11.5px;letter-spacing:2.6px;color:var(--cyan);text-transform:uppercase}
+/* ---------- Round logo with dimension ring ---------- */
+.logo-wrap{position:relative;width:150px;height:150px;margin:16px auto 14px}
+.ring{position:absolute;inset:0;border-radius:50%;border:1.5px dashed var(--cyan);animation:spin 40s linear infinite}
+.logo{position:absolute;inset:11px;border-radius:50%;padding:4px;background:linear-gradient(135deg,var(--cyan),#2a6fa8);box-shadow:0 0 30px rgba(79,216,255,.35)}
+.logo-inner{position:relative;width:100%;height:100%;border-radius:50%;overflow:hidden;background:var(--bg2);display:flex;align-items:center;justify-content:center}
+/* REPLACE LOGO IMAGE HERE: just keep your picture saved as GJ.jpeg */
+.logo-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.logo-fallback{font-weight:800;font-size:38px;color:var(--cyan)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.name{font-size:clamp(28px,8.4vw,40px);line-height:1.12;font-weight:800;letter-spacing:.3px}
+h1{font-size:clamp(19px,5.4vw,24px);line-height:1.35;margin:16px 0 8px;font-weight:700;color:#d8efff}
+h1 em{font-style:normal;color:var(--cyan)}
+.lead{color:var(--muted);font-size:15.5px;max-width:450px;margin:0 auto}
+
+/* ---------- CTA ---------- */
+.cta{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:400px;min-height:62px;margin:22px auto 0;padding:14px 20px;
+  background:var(--cyan);color:#05223a;text-decoration:none;font:800 16.5px/1.2 system-ui,Arial,sans-serif;letter-spacing:.6px;border-radius:8px;
+  box-shadow:0 0 0 0 rgba(79,216,255,.55),0 10px 26px rgba(0,0,0,.35);animation:pulse 2.8s infinite;transition:transform .2s,background .2s;-webkit-tap-highlight-color:transparent}
+.cta svg{width:28px;height:28px;flex:none}
+.cta:hover{background:#7fe6ff;transform:translateY(-2px)}
+.cta:active{transform:scale(.985)}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(79,216,255,.5),0 10px 26px rgba(0,0,0,.35)}70%,100%{box-shadow:0 0 0 14px rgba(79,216,255,0),0 10px 26px rgba(0,0,0,.35)}}
+.free{font-size:12.5px;color:var(--muted);margin-top:12px}
+
+/* ---------- Sections ---------- */
+section{margin-top:34px}
+.label{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
+.label::before{content:"// "}
+.specs{display:grid;gap:10px}
+.spec{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.spec b{font-size:13px;color:var(--cyan);border:1px solid var(--cyan);border-radius:4px;padding:3px 0;text-align:center}
+.spec h3{font-size:17px;line-height:1.3}
+.spec p{font-size:14.5px;color:var(--muted);margin-top:2px}
+.notes{padding:16px 18px;border:1px solid var(--line);border-radius:6px;background:var(--card);display:grid;gap:8px;font-size:15px}
+.notes div{display:flex;gap:12px}
+.notes span{color:var(--cyan);flex:none}
+.note{margin-top:30px;padding:16px 18px;border:1px dashed var(--line);border-radius:6px;font-size:13px;color:var(--muted);background:rgba(0,0,0,.18)}
+.note strong{color:var(--cyan)}
+footer{text-align:center;font-size:12.5px;color:var(--muted);margin-top:22px}
+
+@media (min-width:640px){ main{padding-top:44px} }
+@media (prefers-reduced-motion:reduce){ .ring,.cta{animation:none} *{transition:none!important;scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+<main>
+  <header class="sheet">
+    <p class="tagline mono">Stock market education · Telegram</p>
+    <!-- REPLACE LOGO IMAGE HERE (file: GJ.jpeg, set in CONFIG above) -->
+    <div class="logo-wrap">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="logo"><div class="logo-inner">
+        <span class="logo-fallback" aria-hidden="true">GJ</span>
+        <img id="logoImg" alt="Logo" width="128" height="128">
+      </div></div>
+    </div>
+    <p class="name" data-brand>Gautam Kumar Jha</p>
+
+    <h1>Read the chart. <em>Respect the risk.</em> Stay disciplined.</h1>
+    <p class="lead">A free Telegram channel with educational content on chart basics, risk management and trading habits, for beginners and experienced readers.</p>
+
+    <!-- ============ TELEGRAM CTA: fires Meta Pixel "Subscribe" on click only ============ -->
+    <a id="tgBtn" class="cta" href="https://t.me/+PJ8ndmNlrcs2YjFl" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#05223a"/><path fill="#4fd8ff" d="M17.6 7.3 5.9 11.8c-.8.3-.8.8-.1 1l3 .9 1.1 3.4c.1.4.3.5.6.5s.4-.1.6-.3l1.5-1.4 3 2.2c.5.3 1 .1 1.1-.5l2-9.3c.2-.8-.3-1.2-1.1-.9zm-1.4 2-5.6 5-.2 2.3-.9-2.9 6.2-4.1c.3-.2.5-.1.5.1z"/></svg>
+      <span>JOIN FREE TELGRAM CHANNEL</span>
+    </a>
+    <p class="free">Free to join · Opens Telegram directly</p>
+  </header>
+
+  <section aria-labelledby="inside">
+    <p class="label mono" id="inside">Inside the channel</p>
+    <div class="specs">
+      <article class="spec"><b class="mono">01</b><div><h3>Chart basics</h3><p>Candlesticks, trends, support and resistance as learning topics.</p></div></article>
+      <article class="spec"><b class="mono">02</b><div><h3>Risk management</h3><p>Position sizing and stop-loss ideas that put capital protection first.</p></div></article>
+      <article class="spec"><b class="mono">03</b><div><h3>Trading discipline</h3><p>Patience, planning and journaling to keep emotions in check.</p></div></article>
+      <article class="spec"><b class="mono">04</b><div><h3>Market knowledge</h3><p>Common terms, sessions and news, explained in simple language.</p></div></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="know">
+    <p class="label mono" id="know">Please note</p>
+    <div class="notes">
+      <div><span>▸</span>Content is educational and informational only.</div>
+      <div><span>▸</span>It is not personalized financial or investment advice.</div>
+      <div><span>▸</span>No profit or income is promised or guaranteed.</div>
+    </div>
+  </section>
+
+  <!-- ============ FINANCIAL DISCLAIMER (edit text if needed) ============ -->
+  <aside class="note" aria-label="Disclaimer">
+    <strong>Disclaimer:</strong> Everything on this page and in the Telegram channel is for educational and informational purposes only and is not personalized financial or investment advice. Investing and trading in the stock market involve risk, and you may lose some or all of your money. No profits or results are guaranteed. Do your own research or consult a qualified financial advisor before making any decision.
+  </aside>
+
+  <footer>© <span id="yr"></span> <span data-brand>Gautam Kumar Jha</span></footer>
+</main>
+
+<script>
+(function(){
+  var btn = document.getElementById('tgBtn');
+  btn.href = CONFIG.TELEGRAM_URL;
+  document.querySelectorAll('[data-brand]').forEach(function(el){ el.textContent = CONFIG.BRAND_NAME; });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Logo with graceful fallback (shows "GJ" if image is missing)
+  var img = document.getElementById('logoImg');
+  img.onerror = function(){ img.style.display = 'none'; };
+  img.src = CONFIG.LOGO_IMAGE;
+
+  // ===== META PIXEL "Subscribe" EVENT: fires only on a real click of the Telegram button =====
+  btn.addEventListener('click', function(){
+    try {
+      if (typeof window.fbq === 'function') { fbq('track', 'Subscribe'); }
+    } catch (e) { /* never block Telegram navigation */ }
+    // No preventDefault: the link opens Telegram directly.
+  });
+})();
+</script>
+</body>
+</html>
